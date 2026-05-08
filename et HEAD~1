@@ -1,0 +1,35 @@
+[33mcommit b1d9b1835a33ff04299bd0c6e72560c44d4eb2b9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: vsingh08071999 <vsingh9312120383@gmail.com>
+Date:   Fri May 8 14:59:53 2026 +0530
+
+    Removed API keys
+
+[33mcommit 6c79fd5775668d9cdc35e2a1eff91da0246ada5f[m
+Author: vsingh08071999 <vsingh9312120383@gmail.com>
+Date:   Fri May 8 12:46:59 2026 +0530
+
+    Weather app completed with errors, temp and location
+
+[33mcommit c66c143890516e2097b5ea1e09228534de943a8f[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: vsingh08071999 <vsingh9312120383@gmail.com>
+Date:   Wed May 6 11:32:02 2026 +0530
+
+    html, css, routing
+
+[33mcommit 5cfc1f8713d596260c37fe685f65906921360be8[m
+Author: vsingh08071999 <vsingh9312120383@gmail.com>
+Date:   Tue May 5 00:04:15 2026 +0530
+
+    handlebars, html, express
+
+[33mcommit 02fa6ed89d20a5a3cc38c47263a931c7a2207820[m
+Author: vsingh08071999 <vsingh9312120383@gmail.com>
+Date:   Wed Apr 29 00:18:47 2026 +0530
+
+    First commit after clean
+
+[33mcommit 1586003256bd76115cf15bb866cfdb77da082932[m
+Author: vsingh08071999 <vsingh9312120383@gmail.com>
+Date:   Wed Apr 29 00:15:34 2026 +0530
+
+    Again Commit
