@@ -31,7 +31,7 @@ weatherForm.addEventListener('submit', (e) => {
     // const url = 'https://api.open-meteo.com/v1/forecast?latitude=19.148684&longitude=72.992706&current_weather=true'
     messageOne.textContent = 'Loading.....'
     messageTwo.textContent = ''
-    fetch('http://localhost:3000/weather?address=' + searchValue.value).then((response) => {
+    fetch('/weather?address=' + searchValue.value).then((response) => {
         // console.log("response ----------", response)
         response.json().then((data) => {
             // console.log(data.Error)
@@ -52,6 +52,11 @@ weatherForm.addEventListener('submit', (e) => {
                 "Unable to connect to server";
             messageTwo.textContent = '';
         })
+    }).catch((error)=>{
+            console.log("Fetch Error while calling api:", error);
+            messageOne.textContent =
+                "Unable to connect to server";
+            messageTwo.textContent = '';
     })
     // messageOne.textContent = ''
     // } else {
