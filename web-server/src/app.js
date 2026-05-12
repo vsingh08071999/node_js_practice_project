@@ -2,6 +2,7 @@ const getCode = require('./utils/geocode')
 const getTempData = require('./utils/forecast')
 const path = require("path")
 const hbs = require("hbs")
+require('dotenv').config()
 const express = require('express')
 const app = express()
 

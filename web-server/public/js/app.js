@@ -40,23 +40,25 @@ weatherForm.addEventListener('submit', (e) => {
             if (localData.Error === undefined) {
                 console.log("-------Data is : ", data)
                 const tempData = data
+                messageTwo.className = 'successMsg'
                 messageTwo.textContent = "Current temperature of " + tempData.Weather.forecast.location + " is: " + tempData.Weather.forecast.temperature + "\u00B0C"
             } else {
                 console.log("Response Error is : ", localData.Error);
+                messageTwo.className = 'errorMsg'
                 messageTwo.textContent = localData.Error
             }
             messageOne.textContent = ''
         }).catch((error) => {
             console.log("Fetch Error:", error);
-            messageOne.textContent =
-                "Unable to connect to server";
-            messageTwo.textContent = '';
+            messageTwo.className = 'errorMsg'
+            messageOne.textContent = '';
+            messageTwo.textContent = "Unable to connect to server";
         })
-    }).catch((error)=>{
-            console.log("Fetch Error while calling api:", error);
-            messageOne.textContent =
-                "Unable to connect to server";
-            messageTwo.textContent = '';
+    }).catch((error) => {
+        console.log("Fetch Error while calling api:", error);
+        messageTwo.className = 'errorMsg'
+        messageOne.textContent = '';
+        messageTwo.textContent = "Unable to connect to server";
     })
     // messageOne.textContent = ''
     // } else {

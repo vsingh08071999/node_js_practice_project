@@ -1,9 +1,13 @@
 const request = require("postman-request")
 
-
+require('dotenv').config()
+const mapbox_token = process.env.MAPBOX_TOKEN;
+console.log("Token: "+ mapbox_token)
 const getLatLong = (address, callback) => {
     const url =
-        "url"
+        "https://api.mapbox.com/search/geocode/v6/forward?q=" + address + "&access_token=" + mapbox_token + "&limit=1"
+    // "url"
+    console.log("GEOCODE URL:  "+ url)
     request({ url: url, json: true }, (error, response) => {
         if (error) {
             callback("Unable to connect to location services!", undefined)
